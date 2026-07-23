@@ -1,0 +1,6 @@
+{
+  "name": "Gu-Ha Grill",
+  "description": "Super modern website for Gu-Ha Grill Kebab Restaurant",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

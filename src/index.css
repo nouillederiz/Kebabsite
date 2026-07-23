@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #FF5F1F;
+}
+
+@layer utilities {
+  .bg-gradient-brand {
+    background-color: #0F0F0F;
+    background-image: radial-gradient(circle at 70% 30%, #2A1506 0%, #0F0F0F 70%);
+  }
+  .glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .card-shadow {
+    box-shadow: 20px 20px 60px rgba(0,0,0,0.5);
+  }
+  .monogram {
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--color-brand);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    letter-spacing: -2px;
+    border-radius: 4px;
+    transform: rotate(-5deg);
+    box-shadow: 4px 4px 0px var(--color-brand);
+    color: white;
+  }
+  .float-3d {
+    transform: perspective(1000px) rotateY(-15deg) rotateX(5deg);
+    transition: transform 0.5s;
+  }
+  .float-3d:hover {
+    transform: perspective(1000px) rotateY(-5deg) rotateX(2deg) scale(1.02);
+  }
+}
